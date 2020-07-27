@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 90vh;
+  display: flexbox;
+  display: flex;
+  align-items: center;
+}
+.svg-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 700px;
+}
+#man-reaching {
+  animation: stretch 2000ms ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+.odd-one {
+  animation: stretch 2100ms ease-in-out 400ms infinite alternate;
+  transform-origin: bottom;
+}
+.odd-two {
+  animation: stretch 1900ms ease-in-out 250ms infinite alternate;
+  transform-origin: bottom;
+}
+.odd-three {
+  animation: stretch 2000ms ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+#data-point5 {
+  animation: moveLeft 2000ms ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#right-arm {
+  animation: stretchArm 2000ms ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#data-points {
+  animation: moveDown 2000ms 500ms ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#columns-even {
+  animation: moveDown 2000ms 150ms ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes moveDown {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(30deg); }
+}
+@-webkit-keyframes stretch {
+  from { transform: rotateX(0deg) scaleY(1.05); }
+  to { transform: rotateX(30deg) scaleY(1); }
+}
+@-webkit-keyframes moveLeft {
+  from { transform: translate(-55px, -20px) rotateZ(-30deg); }
+  to { transform: translate(0,0) rotateZ(0deg); }
+}
+@-webkit-keyframes stretchArm {
+  from { transform: scaleY(1.4) rotateZ(-30deg); }
+  to { transform: scaleY(1) rotateZ(0deg); }
+}
+
+@keyframes moveDown {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(30deg); }
+}
+@keyframes stretch {
+  from { transform: rotateX(0deg) scaleY(1.05); }
+  to { transform: rotateX(30deg) scaleY(1); }
+}
+@keyframes moveLeft {
+  from { transform: translate(-55px, -20px) rotateZ(-30deg); }
+  to { transform: translate(0,0) rotateZ(0deg); }
+}
+@keyframes stretchArm {
+  from { transform: scaleY(1.4) rotateZ(-30deg); }
+  to { transform: scaleY(1) rotateZ(0deg); }
+}
