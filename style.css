@@ -79,7 +79,7 @@ body {
 }
 @keyframes moveLeft {
   from { transform: translate(-55px, -20px) rotateZ(-30deg); }
-  to { transform: translate(0,0) rotateZ(0deg); }
+  to { transform: translate(0,0) rotateZ(0deg); fill: #555; }
 }
 @keyframes stretchArm {
   from { transform: scaleY(1.4) rotateZ(-30deg); }
